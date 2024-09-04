@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": ""/nodify_1/client/client/index.html"
+      "destination": "/nodify_1/client/client/index.html"
     }
   ]
 }
