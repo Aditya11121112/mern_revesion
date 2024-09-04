@@ -14,6 +14,9 @@ app.use(
 );
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send(<h1>Worked</h1>);
+});
 app.use("/api/v1", router);
 
 mongoose
