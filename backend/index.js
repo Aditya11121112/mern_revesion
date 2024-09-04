@@ -17,7 +17,9 @@ app.use(express.json());
 app.use("/api/v1", router);
 
 mongoose
-  .connect("mongodb://localhost:27017/adminpannel")
+  .connect(
+    "mongodb+srv://root:root@cluster0.vcbdv.mongodb.net/?retryWrites=true&w=majority&appName=apptest"
+  )
   .then(() => {
     app.listen(4000, () => {
       console.log("server started at port 4000 and databse connected");
