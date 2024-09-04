@@ -8,8 +8,9 @@ const app = express();
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173", // Replace with your client's origin
+    origin: "*", // Replace with your client's origin
     credentials: true,
+    methods: ["GET", "POST", "DELETE", "PUT"],
   })
 );
 app.use(express.json());
